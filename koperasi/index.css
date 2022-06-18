@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*style*/
+
+body {
+	background-color: #eaeaea;
+}
+
+.topbar {
+	height: 50px;
+	background-color: lightblue;
+	padding: 10px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.topbar .foto {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+.topbar .foto a img {
+	width: 40px;
+}
+
+.topbar .menu {
+	position: absolute;
+	top: 15px;
+	left: 280px;
+}
+
+.topbar label .nama {
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 80px;
+	color: white;
+	position: absolute;
+}
+
+.topbar .keluar {
+	color: red;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+
+.header {
+	height: 50px;
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.header .judul {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+.container {
+	width: 500px;
+	background-color: lightskyblue;
+	margin: 70px auto 20px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.hallo {
+	margin: 50px auto 10px;
+	height: 500px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.hallo p {
+word-spacing: 2px;
+}
+
+.main .tabel {
+	margin: 30px auto;
+}
+
+.main .tabel tr th, .main .tabel tr td {
+	padding: 5px;
+	border: 1px solid #eaeaea;
+	text-align: center;
+}

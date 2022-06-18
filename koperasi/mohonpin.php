@@ -1,0 +1,71 @@
+<?php 
+
+session_start();
+require 'function/function.php';
+
+if( !isset($_SESSION["login"]) ){
+	header("Location: ../login/loginu.php");
+	exit;
+}
+
+$is = $_GET["ur"];
+$nik = $_SESSION["nik"];
+
+if( isset($_POST["transaksi"]) ) {
+	
+	// cek data berhasi ditambah atau tidak
+	if( pinjam($_POST) > 0 ) {
+		echo "
+			<script>
+				alert('Transaksi Berhasil Dilakukan!');
+				document.location.href = 'index.php'
+			</script>
+		";
+	} else {
+		echo "
+			<script>
+				alert('Transaksi Gagal Dilakukan!');
+			</script>
+		";
+	}
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Permohonan Pinjaman</title>
+	<link rel="stylesheet" href="mohonpin.css">
+</head>
+<body>
+
+	<div class="container">
+		<form action="" method="post">
+			<div class="header">
+				<h3 class="judul">Masukkan Nominal yang Akan Anda Pinjam</h3>
+			</div>
+
+			<div class="main">
+				<ul>
+					<li>
+						<input type="hidden" name="nik" value="<?= $nik; ?>">
+						<label class="nom">Nominal :</label>
+						<input class="isi" type="text" name="nominal">
+					</li>
+					<li>
+						<label class="lam">Lama Pembayaran :</label>
+						<input class="lama" type="text" name="lamabayar">
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer">
+				<button type="submit" name="transaksi">Transaksi!</button>
+				<button type="submit" name="batal">Batal!</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

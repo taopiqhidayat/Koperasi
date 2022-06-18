@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   "---RESET---"
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*style*/
+
+body {
+	font: 16px/28px arial, sans-serif;
+	background-color: lightskyblue;
+	color: #333;
+}
+
+.container{
+	width: 400px;
+	margin: 80px auto 20px;
+	background-color: deepskyblue;
+	border-radius: 10px 0 0 50px;
+	box-shadow: -10px -5px 10px 1px rgba(0,0,0,.7);
+	box-sizing: border-box;
+	position: relative;
+}
+
+.header {
+	height: 50px;
+	padding: 10px;
+	background-color: royalblue; 
+	border-radius: 10px 0 0 0;
+	box-sizing: border-box;
+
+}
+
+.header .judul {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.main {
+	height: 400px;
+	padding: 25px; 
+	box-sizing: border-box;
+}
+
+.main .login ul li .nm,.main .login ul li .pas,.main .login ul li .kdpeg {
+	display: block;
+	text-align: center;
+	margin-top: 30px
+
+}
+
+.main .login ul li .nam,.main .login ul li .pass,.main .login ul li .kd_peg {
+	width: 200px;
+	height: 20px;
+	display: block;
+	margin: auto;
+}
+
+.main .login ul li .chbox {
+	margin: 30px 5px 10px 21%;
+}
+
+.main .blogin {
+	background-color: chartreuse;
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+}
+
+.main .bregis {
+	background-color: forestgreen;
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+}
+
+.footer .saluse{
+	text-decoration: none;
+	color: orangered;
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}
